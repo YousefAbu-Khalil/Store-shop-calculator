@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    
+    <link rel="stylesheet" href="store.css">
+</head>
+<body>
+    <div class="products">
+        <div class="product" data-id="1" data-price="900">
+            <div>
+                <img src="iphone-13-pro-graphite-revibe_4d15b9b0-90f5-41ce-bf10-c8c8c23dc9be.webp" alt="iPhone 13 Pro">
+            </div>
+            <div class="Dtext">
+                <p>iPhone 13 Pro</p>
+                <p>900jd</p>
+            </div>
+            <button onclick="addToCart(1)">Add to cart</button>
+        </div>
+        <div class="product" data-id="2" data-price="150">
+            <div>
+                <img src="Headphone-Zone-Sony-WH-CH720N-19.webp" alt="Headset">
+            </div>
+            <div class="Dtext">
+                <p>Headset</p>
+                <p>150jd</p>
+            </div>
+            <button onclick="addToCart(2)">Add to cart</button>
+        </div>
+        <div class="product" data-id="3" data-price="60">
+            <div>
+                <img src="download.jfif" alt="Keyboard">
+            </div>
+            <div class="Dtext">
+                <p>Keyboard</p>
+                <p>60jd</p>
+            </div>
+            <button onclick="addToCart(3)">Add to cart</button>
+        </div>
+    </div>
+
+    <div class="cart">
+        <div id="cart-items"></div>
+        <div class="Dbutton">
+            <div>
+                <h2>
+                    Total: <br>
+                    <span id="total-price">0</span> 
+                </h2>
+            </div>
+            <div style="margin-top: 30px; margin-left: 30px;">
+                <button onclick="saveCart()">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="store.js"></script>
+</body>
+</html>
